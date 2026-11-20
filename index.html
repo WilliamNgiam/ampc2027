@@ -1,153 +1,483 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
     <base href=".">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
-    <meta name="description" content="Australasian Mathematical Psychology Conference 2027">
+    <meta name="description" content="Australasian Mathematical Psychology Conference 2027 — February 10–12 at Adelaide University">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>AMPC2027</title>
+    <meta name="KeyWords" content="Conference, Mathematical Psychology, AMPC 2027, ASMP, Adelaide University">
+    <title>AMPC 2027 | Australasian Mathematical Psychology Conference</title>
 </head>
 
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Adelaide University Bonython Hall" width="1000">
-        <div class="top-left">
-            <span class="title1">Australasian Mathematical </span><span class="title2">Psychology Conference
-            </span><span class="year">2027</span>
-        </div>
-        <div class="bottom-right">
-            February 10-12 <br> Adelaide University
-        </div>
-    </div>
+    <!-- ==================================================================
+         FLOATING LEFT MENUBAR (Revealed on Scroll Down)
+         ================================================================== -->
+    <nav class="floating-left-nav" id="floatingNav" aria-label="Floating Side Navigation">
+        <div class="floating-nav-brand">AMPC 2027</div>
+        <a class="current" href="#top" data-section="top">Home</a>
+        <a href="#organisers" data-section="organisers">Organisers</a>
+        <a href="#program" data-section="program">Program</a>
+        <a href="#venue" data-section="venue">Location &amp; Stay</a>
+        <a href="#registration" data-section="registration">Registration</a>
+        <a href="#sponsors" data-section="sponsors">Sponsors</a>
+        <a href="flyer">Flyer</a>
+    </nav>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
+    <!-- ==================================================================
+         1. DARK HERO BAND (SyncConf Header & Hero Aesthetic)
+         ================================================================== -->
+    <header class="hero-band" id="top">
+        <!-- Subtle Mathematical Psychology Vector Motif (Psychometric & Drift Curves) -->
+        <div class="hero-math-bg" aria-hidden="true">
+            <svg viewBox="0 0 1200 500" preserveAspectRatio="none">
+                <path d="M 0,420 C 350,420 450,80 1200,80" fill="none" stroke="#f9f2e6" stroke-width="2" stroke-dasharray="6 6" />
+                <path d="M 0,450 C 480,450 520,110 1200,110" fill="none" stroke="#7ea0cc" stroke-width="2.5" />
+                <path d="M 0,380 Q 300,370 500,220 T 1200,140" fill="none" stroke="#edd8a4" stroke-width="1.5" />
+                <line x1="120" y1="0" x2="120" y2="500" stroke="#ffffff" stroke-width="0.7" opacity="0.3" />
+                <line x1="600" y1="0" x2="600" y2="500" stroke="#ffffff" stroke-width="0.7" opacity="0.3" />
+                <line x1="0" y1="250" x2="1200" y2="250" stroke="#ffffff" stroke-width="0.7" opacity="0.3" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <!-- Top Navigation Bar -->
+            <nav class="top-nav" aria-label="Primary Navigation">
                 <a class="current" title="Conference Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a>
-            </td>
-            <td class="navigation">
-                <a title="Venue" href="directions">Venue</a>
-            </td>
-            <td class="navigation">
-                <a title="Hotels" href="hotels">Hotels</a>
-            </td>
-            <td class="navigation">
+                <a title="Program &amp; Workshops" href="#program">Program</a>
+                <a title="Conference Organisers" href="#organisers">Organisers</a>
+                <a title="Venue, Hotels &amp; Tourism" href="#venue">Location &amp; Stay</a>
+                <a title="Registration &amp; Code of Conduct" href="#registration">Registration</a>
+                <a title="Sponsors" href="#sponsors">Sponsors</a>
                 <a title="Conference Flyer" href="flyer">Flyer</a>
-            </td>
-        </tr>
-    </table>
+            </nav>
 
-    <div>
-        <p>
-            <a href="https://mathpsych.org/affiliate/1" target="_blank"><img src="assets/ASMP_logo.jpg"
-                    alt="Australasian Mathematical Psychology Society logo"
-                    style="float: left; margin-right: 30px; margin-bottom: 50px; width: 300px;"></img></a>
-            The <b><em>Australasian Mathematical Psychology Conference</em></b> (AMPC) is the annual meeting of the
-            Australian Society for Mathematical Psychology (ASMP).
-            <br><br>
-            This year, the conference will be hosted on February 10-12 by Adelaide University. This conference brings
-            together
-            mathematical psychologists from around Australia and beyond to discuss their latest research.
-            <br><br>
-            Follow us on BlueSky for updates: <a href="https://bsky.app/profile/ozmathpsych.bsky.social"
-                target="_blank">@ozmathpsych</a>!
-        </p>
-    </div>
-    <br>
-    <div>
-        <h2>Organizers</h2>
-        <p>
-        </p>
-        <table class="organisers">
-            <tr>
-                <td class="organiser">
-                    <a>
-                        <img src="assets/rachel_stephens.jpeg" alt="Rachel Stephens">
-                    </a>
-                </td>
-                <td class="organiser">
-                    <a>
-                        <img src="assets/ngiam.jpg" alt="William Ngiam">
-                    </a>
-                </td>
-                <td class="organiser">
-                    <a>
-                        <img src="assets/keith_ransom.png" alt="Keith Ransom">
-                    </a>
-                </td>
-                <td class="organiser">
-                    <a>
-                        <img src="assets/carolyn_semmler.jpeg" alt="Carolyn Semmler">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td class="organiser">
-                    <a href="https://researchers.adelaide.edu.au/profile/rachel.stephens">Rachel Stephens</a>
-                </td>
-                <td class="organiser">
-                    <a href="https://researchers.adelaide.edu.au/profile/william.ngiam">William Ngiam</a>
-                </td>
-                <td class="organiser">
-                    <a href="https://researchers.adelaide.edu.au/profile/keith.ransom">Keith Ransom</a>
-                </td>
-                <td class="organiser">
-                    <a href="https://researchers.adelaide.edu.au/profile/carolyn.semmler">Carolyn Semmler</a>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div style="text-align: center">
-        <a href="mailto:rachel.stephens@adelaide.edu.au" class="button">Click to email organisers</a>
-    </div>
-    <div>
-        <h2>Tourism after the conference</h2>
-        Note that you may wish to stay on in Adelaide for the weekend after for the preview week for the wonderful <a
-            href="https://adelaidefringe.com.au/" target="_blank">Adelaide Fringe Festival</a>, which is Australia's
-        biggest arts festival and the world's
-        second-largest annual arts festival. Preview shows will be running and there will be lovely outdoor areas to
-        relax, dine, and
-        enjoy the summer weather at <a href="https://www.gardenofunearthlydelights.com.au/" target="_blank">The Garden
-            of Unearthly Delights</a>.
+            <!-- Emblem + Conference Title Lockup -->
+            <div class="hero-lockup">
+                <a href="https://mathpsych.org/affiliate/1" target="_blank" rel="noopener" class="hero-emblem" title="Australian Society for Mathematical Psychology">
+                    <img src="assets/ASMP_logo.jpg" alt="Australasian Mathematical Psychology Society (ASMP) logo">
+                </a>
+                <div class="hero-title-block">
+                    <span class="hero-eyebrow">Annual Meeting of the ASMP</span>
+                    <h1 class="hero-main-title">
+                        <span class="title1">Australasian Mathematical</span>
+                        <span class="title2">Psychology Conference</span><span class="year">2027</span>
+                    </h1>
+                    <div class="palette-accent-bar" aria-hidden="true">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-    <h2>Sponsors</h2>
-    <table class="sponsors">
-        <tr>
-            <td class="sponsor">
-                <a href="https://adelaide.edu.au/">
-                    <img src="assets/AU_logo.png" alt="Adelaide University" style="width: 300px;">
-                </a>
-                <p></p>
-            </td>
-            <!----            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten2.jpg" alt="Second Sponsor Name" style="width: 80%">
-                </a>
-            </td>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten3.jpg" alt="Third Sponsor Name">
-                </a>
-            </td> -->
-        </tr>
-    </table>
+            <!-- Hero Intro & Date/Action Split -->
+            <div class="hero-details-grid">
+                <div class="hero-description">
+                    <p>
+                        The annual meeting of the <a href="https://mathpsych.org/affiliate/1" target="_blank" rel="noopener">Australian Society for Mathematical Psychology (ASMP)</a> will be
+                        hosted by <b>Adelaide University</b> in 2027. This conference brings together mathematical psychologists and cognitive scientists from around Australia and beyond to discuss quantitative and computational approaches to psychological phenomena.
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        Follow us on BlueSky for updates:
+                        <a href="https://bsky.app/profile/ozmathpsych.bsky.social" target="_blank" rel="noopener"><b>@ozmathpsych</b></a>
+                    </p>
+                </div>
 
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+                <div class="hero-cta-box">
+                    <div class="hero-date-display">10–12 Feb 2027</div>
+                    <div class="hero-location-display">Adelaide University, South Australia</div>
+                    <a href="#registration" class="button button-FullWidth">Registration &amp; Abstracts</a>
+                </div>
+            </div>
+
+            <!-- Framed Bonython Hall Banner Visual
+            <div class="hero-banner-frame">
+                <img src="assets/banner.jpg" alt="Adelaide University Bonython Hall">
+                <div class="hero-banner-caption">
+                    <span><b>Adelaide University</b> &bull; City East Campus (Centenary Building, C3-16)</span>
+                    <span>February 10–12, 2027</span>
+                </div>
+            </div> -->
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================================================================
+             2. ORGANISERS SECTION (SyncConf Circular Avatar Grid Aesthetic)
+             ================================================================== -->
+        <section class="section-band section-light" id="organisers">
+            <div class="container">
+                <h2 class="section-heading">Organisers</h2>
+                <p class="section-subtitle">
+                    AMPC 2027 is organised by researchers from the School of Psychology at Adelaide University.
+                </p>
+
+                <!-- SyncConf-inspired Segmented Track Bar -->
+                <div class="track-tabs" role="navigation" aria-label="Quick Filters">
+                    <a href="#organisers" class="track-tab active">All Organisers</a>
+                    <a href="#program" class="track-tab">Ψ Program &amp; Workshops</a>
+                    <a href="#venue" class="track-tab">⌘ Venue &amp; Hotels</a>
+                </div>
+
+                <div class="organisers-grid">
+                    <div class="organiser-card">
+                        <a class="organiser-avatar-wrap" href="https://researchers.adelaide.edu.au/profile/rachel.stephens" target="_blank" rel="noopener">
+                            <img src="assets/rachel_stephens.jpeg" alt="Rachel Stephens">
+                        </a>
+                        <div class="organiser-name">
+                            <a href="https://researchers.adelaide.edu.au/profile/rachel.stephens" target="_blank" rel="noopener">Rachel Stephens</a>
+                        </div>
+                        <div class="organiser-role">Adelaide University</div>
+                        <a class="organiser-link" href="https://researchers.adelaide.edu.au/profile/rachel.stephens" target="_blank" rel="noopener">Researcher Profile &rarr;</a>
+                    </div>
+
+                    <div class="organiser-card">
+                        <a class="organiser-avatar-wrap" href="https://researchers.adelaide.edu.au/profile/william.ngiam" target="_blank" rel="noopener">
+                            <img src="assets/ngiam.jpg" alt="William Ngiam">
+                        </a>
+                        <div class="organiser-name">
+                            <a href="https://researchers.adelaide.edu.au/profile/william.ngiam" target="_blank" rel="noopener">William Ngiam</a>
+                        </div>
+                        <div class="organiser-role">Adelaide University</div>
+                        <a class="organiser-link" href="https://researchers.adelaide.edu.au/profile/william.ngiam" target="_blank" rel="noopener">Researcher Profile &rarr;</a>
+                    </div>
+
+                    <div class="organiser-card">
+                        <a class="organiser-avatar-wrap" href="https://researchers.adelaide.edu.au/profile/keith.ransom" target="_blank" rel="noopener">
+                            <img src="assets/keith_ransom.png" alt="Keith Ransom">
+                        </a>
+                        <div class="organiser-name">
+                            <a href="https://researchers.adelaide.edu.au/profile/keith.ransom" target="_blank" rel="noopener">Keith Ransom</a>
+                        </div>
+                        <div class="organiser-role">Adelaide University</div>
+                        <a class="organiser-link" href="https://researchers.adelaide.edu.au/profile/keith.ransom" target="_blank" rel="noopener">Researcher Profile &rarr;</a>
+                    </div>
+
+                    <div class="organiser-card">
+                        <a class="organiser-avatar-wrap" href="https://researchers.adelaide.edu.au/profile/carolyn.semmler" target="_blank" rel="noopener">
+                            <img src="assets/carolyn_semmler.jpeg" alt="Carolyn Semmler">
+                        </a>
+                        <div class="organiser-name">
+                            <a href="https://researchers.adelaide.edu.au/profile/carolyn.semmler" target="_blank" rel="noopener">Carolyn Semmler</a>
+                        </div>
+                        <div class="organiser-role">Adelaide University</div>
+                        <a class="organiser-link" href="https://researchers.adelaide.edu.au/profile/carolyn.semmler" target="_blank" rel="noopener">Researcher Profile &rarr;</a>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="mailto:rachel.stephens@adelaide.edu.au" class="button">Click to Email Organisers</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             3. PROGRAM & WORKSHOPS SECTION
+             ================================================================== -->
+        <section class="section-band section-white" id="program">
+            <div class="container">
+                <h2 class="section-heading">Program &amp; Workshops</h2>
+                <p class="section-subtitle">
+                    Three days of talks, discussions, and hands-on computational and quantitative psychology workshops.
+                </p>
+
+                <div class="program-grid">
+                    <!-- Call for Workshop EOIs -->
+                    <div class="info-card highlight-card">
+                        <span class="card-tag">Deadline: COB 23 October 2026</span>
+                        <h3>Call for Workshop EOIs</h3>
+                        <p>
+                            We are accepting Expressions of Interest (EOIs) for workshops on the <b>afternoon of Friday, 12th February 2027</b>.
+                        </p>
+                        <p>
+                            Please email your proposal—including a brief outline of the aims, content, preferred duration, and presenter name(s)—by <b>COB 23rd October 2026</b> to:
+                        </p>
+                        <p style="margin-bottom: 18px;">
+                            &bull; <a href="mailto:rachel.stephens@adelaide.edu.au">rachel(dot)stephens(at)adelaide.edu.au</a><br>
+                            &bull; <a href="mailto:william.ngiam@adelaide.edu.au">william(dot)ngiam(at)adelaide.edu.au</a>
+                        </p>
+                        <a href="mailto:rachel.stephens@adelaide.edu.au,william.ngiam@adelaide.edu.au?subject=AMPC%202027%20Workshop%20EOI" class="button">Submit Workshop EOI</a>
+                    </div>
+
+                    <!-- Conference Schedule Overview -->
+                    <div class="info-card navy-card">
+                        <span class="card-tag navy">February 10–12, 2027</span>
+                        <h3>Conference Schedule</h3>
+                        <p>
+                            The full talk schedule will be published once abstract submissions close.
+                        </p>
+                        <div class="schedule-days">
+                            <div class="schedule-day-item">
+                                <span class="schedule-day-date">Wed 10 Feb</span>
+                                <span class="schedule-day-desc">Day 1 &mdash; Welcome, Plenary &amp; Contributed Talks</span>
+                            </div>
+                            <div class="schedule-day-item">
+                                <span class="schedule-day-date">Thu 11 Feb</span>
+                                <span class="schedule-day-desc">Day 2 &mdash; Contributed Sessions &amp; Conference Social</span>
+                            </div>
+                            <div class="schedule-day-item">
+                                <span class="schedule-day-date">Fri 12 Feb</span>
+                                <span class="schedule-day-desc">Day 3 &mdash; Morning Talks &amp; Afternoon Workshops</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <a href="program" class="button button-secondary">View Dedicated Program Page &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             4. LOCATION, HOTELS & TOURISM (SyncConf Dark Band + Map Strip)
+             ================================================================== -->
+        <section class="section-band section-dark" id="venue">
+            <div class="container">
+                <h2 class="section-heading">Location</h2>
+                <p class="section-subtitle">
+                    Hosted in the heart of Adelaide's cultural precinct at the City East campus.
+                </p>
+
+                <div class="venue-split">
+                    <div class="venue-text">
+                        <div class="venue-label">Adelaide University &bull; City East Campus</div>
+                        <p>
+                            The conference will be held in the <b>C3-16 Lecture Theatre</b> in the <b>Centenary Building</b> at <b>Adelaide University's City East campus</b> in the Adelaide CBD, surrounded by parklands, museums, and vibrant dining districts.
+                        </p>
+
+                        <div class="venue-label" style="margin-top: 24px;">Recommended Accommodation</div>
+                        <p style="margin-bottom: 10px;">
+                            Convenient hotels within a short walk of the Adelaide University City East campus. We have secured a discount code for booking at these hotels.
+                        </p>
+                        <div class="hotel-cards">
+                            <a href="https://www.ibisadelaide.com.au/" target="_blank" rel="noopener" class="hotel-pill" style="text-decoration: none;">
+                                <h4>Ibis Adelaide &nearr;</h4>
+                                <p>122 Grenfell St &bull; Short walk to City East campus</p>
+                            </a>
+                            <a href="https://pullmanadelaide.com.au/" target="_blank" rel="noopener" class="hotel-pill" style="text-decoration: none;">
+                                <h4>Pullman Adelaide &nearr;</h4>
+                                <p>16 Hindmarsh Square &bull; Adjacent to university precinct</p>
+                            </a>
+                        </div>
+
+                        <div class="tourism-box">
+                            <h3>Tourism After the Conference</h3>
+                            <p>
+                                You may wish to stay on in Adelaide for the weekend after the conference for the preview week of the wonderful
+                                <a href="https://adelaidefringe.com.au/" target="_blank" rel="noopener"><b>Adelaide Fringe Festival</b></a>—Australia's biggest arts festival and the world's second-largest annual arts festival.
+                                Preview shows will be running with lovely outdoor areas to relax, dine, and enjoy the summer weather at
+                                <a href="https://www.gardenofunearthlydelights.com.au/" target="_blank" rel="noopener"><b>The Garden of Unearthly Delights</b></a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="venue-photo-card">
+                        <a href="https://adelaide.edu.au/content/dam/adelaideuniversity/documents/life-at-adelaide/pdfs/adelaide-city-campus-east-map.pdf" target="_blank" rel="noopener" title="Open Full Adelaide City Campus East Map (PDF)" style="display: block; overflow: hidden;">
+                            <img src="assets/city_east_map_centenary.png" alt="Adelaide University City East Campus Map zoomed in on Centenary Building">
+                        </a>
+                        <div class="venue-photo-meta">
+                            <strong>C3-16 Lecture Theatre, Centenary Building</strong>
+                            Adelaide University City East Campus, Adelaide SA 5000
+                            <div style="margin-top: 12px; display: flex; gap: 12px; flex-wrap: wrap;">
+                                <a href="directions" style="color: var(--color-gold-light); font-size: 0.85rem;"><b>Venue Page &nearr;</b></a>
+                                <a href="hotels" style="color: var(--color-gold-light); font-size: 0.85rem;"><b>Hotels Page &nearr;<b></b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full-Width Map Strip with Overlapping SyncConf-Style Button -->
+        <div class="map-strip">
+            <iframe
+                title="Map of Centenary Building, Adelaide University City East Campus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.4502503218305!2d138.6042441764402!3d-34.92024327284256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ced2d4db381d%3A0xe4ede2a3a1b1ead6!2sCentenary%20Building!5e0!3m2!1sen!2sau!4v1795173446742!5m2!1sen!2sau"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+            <div class="map-cta-overlay">
+                <a href="https://maps.google.com/?q=Centenary+Building,+Adelaide+SA" target="_blank" rel="noopener" class="button">View Map</a>
+            </div>
+        </div>
+
+        <!-- ==================================================================
+             5. FULL-WIDTH ACCENT CTA BANNER & REGISTRATION / CODE OF CONDUCT
+             ================================================================== -->
+        <section class="section-band section-accent" id="registration">
+            <div class="container">
+                <div class="cta-banner-title">Registration &amp; Abstract Submissions Open in November</div>
+                <p class="cta-banner-sub" style="margin-bottom: 12px;">
+                    <b>Abstracts due:</b> 10th January 2027 &nbsp;&bull;&nbsp; <b>Registration closes:</b> 25th January 2027
+                </p>
+                <p class="cta-banner-sub">
+                    Instructions on how to register and submit abstracts for AMPC 2027 will appear here in due time. Thank you for your patience!
+                </p>
+                <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+                    <a href="registration" class="button">Registration Details</a>
+                    <a href="assets/MathPsych2027.pdf" target="_blank" rel="noopener" class="button button-outline-light">Download Conference Flyer (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-band section-light" style="padding-top: 32px; padding-bottom: 48px;">
+            <div class="container">
+                <div class="coc-card">
+                    <h3>Code of Conduct</h3>
+                    <p>
+                        All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct.
+                    </p>
+                    <p>
+                        Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices.
+                    </p>
+                    <p>
+                        We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, BlueSky/Twitter and other online media.
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        If you have any concerns during your time at the conference, please <a href="mailto:rachel.stephens@adelaide.edu.au">contact one of the conference organisers</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             6. SPONSORS & FLYER SECTION (SyncConf Sponsors Aesthetic)
+             ================================================================== -->
+        <section class="section-band section-white" id="sponsors">
+            <div class="container">
+                <h2 class="section-heading">Sponsors</h2>
+                <p class="section-subtitle">
+                    Proudly supported by Adelaide University and the Australian Society for Mathematical Psychology.
+                </p>
+
+                <div class="sponsors-showcase">
+                    <a href="https://adelaide.edu.au/" target="_blank" rel="noopener" class="sponsor-item" title="Adelaide University">
+                        <img src="assets/AU_logo.png" alt="Adelaide University">
+                    </a>
+                    <a href="https://mathpsych.org/affiliate/1" target="_blank" rel="noopener" class="sponsor-item" title="Australian Society for Mathematical Psychology">
+                        <img src="assets/ASMP_logo.jpg" alt="Australian Society for Mathematical Psychology">
+                    </a>
+                </div>
+
+                <!-- Conference Flyer Preview Box -->
+                <div class="flyer-callout">
+                    <a href="assets/MathPsych2027.pdf" target="_blank" rel="noopener">
+                        <img src="assets/MathPsych2027.png" alt="AMPC 2027 Official Flyer" class="flyer-thumb">
+                    </a>
+                    <div>
+                        <h3 style="margin-bottom: 6px;">Share the AMPC 2027 Conference Flyer</h3>
+                        <p style="margin-bottom: 0; font-size: 0.95rem;">
+                            Help spread the word in your department or lab by downloading and displaying the official AMPC 2027 poster.
+                        </p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <a href="assets/MathPsych2027.pdf" target="_blank" rel="noopener" class="button">Download PDF</a>
+                        <a href="flyer" class="button button-secondary" style="font-size: 0.8rem; padding: 10px 18px;">View Full Flyer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================================================================
+         7. DARK FOOTER BAND (SyncConf Footer & Action Buttons Aesthetic)
+         ================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-text">
+                    <div class="footer-presented-by">Presented by</div>
+                    <div class="footer-org-title"><span>ASMP</span> &bull; Australian Society for Mathematical Psychology</div>
+                    <p>
+                        The annual Australasian Mathematical Psychology Conference brings together researchers across Australasia and internationally to advance mathematical, statistical, and computational models of psychology and cognitive science.
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        Organising Team:
+                        <a href="https://researchers.adelaide.edu.au/profile/rachel.stephens" target="_blank" rel="noopener">Rachel Stephens</a>,
+                        <a href="https://researchers.adelaide.edu.au/profile/william.ngiam" target="_blank" rel="noopener">William Ngiam</a>,
+                        <a href="https://researchers.adelaide.edu.au/profile/keith.ransom" target="_blank" rel="noopener">Keith Ransom</a>, and
+                        <a href="https://researchers.adelaide.edu.au/profile/carolyn.semmler" target="_blank" rel="noopener">Carolyn Semmler</a>,
+                        or <a href="mailto:rachel.stephens@adelaide.edu.au">Email us</a>.
+                    </p>
+                </div>
+
+                <a href="https://mathpsych.org/affiliate/1" target="_blank" rel="noopener" class="footer-logo-box" title="ASMP">
+                    <img src="assets/ASMP_logo.jpg" alt="ASMP Logo">
+                </a>
+            </div>
+
+            <!-- 4-Button Social & Action Row -->
+            <div class="footer-action-row">
+                <a href="https://bsky.app/profile/ozmathpsych.bsky.social" target="_blank" rel="noopener" class="footer-action-btn">
+                    &#9729; BlueSky @ozmathpsych
+                </a>
+                <a href="mailto:rachel.stephens@adelaide.edu.au" class="footer-action-btn">
+                    &#9993; Email Organisers
+                </a>
+                <a href="assets/MathPsych2027.pdf" target="_blank" rel="noopener" class="footer-action-btn">
+                    &#128196; Flyer (PDF)
+                </a>
+                <a href="https://mathpsych.org/affiliate/1" target="_blank" rel="noopener" class="footer-action-btn">
+                    &mu;&psi; ASMP Society
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-colophon">
+            &copy; 2027 AMPC Conference Organisers &nbsp;|&nbsp; Original Template by <a href="https://github.com/mikepierce" target="_blank" rel="noopener">Mike Pierce</a>
+        </div>
     </footer>
+
+    <script>
+        (function () {
+            var floatingNav = document.getElementById('floatingNav');
+            if (!floatingNav) return;
+
+            var navLinks = floatingNav.querySelectorAll('a[data-section]');
+            var sectionIds = ['top', 'organisers', 'program', 'venue', 'registration', 'sponsors'];
+
+            function updateFloatingNav() {
+                var scrollY = window.scrollY || window.pageYOffset;
+
+                if (scrollY > 220) {
+                    floatingNav.classList.add('is-visible');
+                } else {
+                    floatingNav.classList.remove('is-visible');
+                }
+
+                var activeId = 'top';
+                var triggerPoint = scrollY + window.innerHeight * 0.32;
+
+                for (var i = 0; i < sectionIds.length; i++) {
+                    var el = document.getElementById(sectionIds[i]);
+                    if (el && el.offsetTop <= triggerPoint) {
+                        activeId = sectionIds[i];
+                    }
+                }
+
+                for (var j = 0; j < navLinks.length; j++) {
+                    var link = navLinks[j];
+                    if (link.getAttribute('data-section') === activeId) {
+                        link.classList.add('current');
+                    } else {
+                        link.classList.remove('current');
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', updateFloatingNav, { passive: true });
+            updateFloatingNav();
+        })();
+    </script>
 
 </body>
 

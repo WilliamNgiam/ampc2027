@@ -23,11 +23,11 @@
         <button type="button" class="floating-nav-toggle" id="floatingNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
         <div class="floating-nav-brand">AMPC 2027</div>
         <a class="current" href="#top" data-section="top">Home</a>
-        <a href="#organisers" data-section="organisers">Organisers</a>
         <a href="#program" data-section="program">Program</a>
-        <a href="#venue" data-section="venue">Location &amp; Stay</a>
-        <a href="#registration" data-section="registration">Registration</a>
+        <a href="#venue" data-section="venue">Venue &amp; Stay</a>
+        <a href="#organisers" data-section="organisers">Organisers</a>
         <a href="#sponsors" data-section="sponsors">Sponsors</a>
+        <a href="registration">Registration</a>
         <a href="flyer">Flyer</a>
     </nav>
 
@@ -52,10 +52,11 @@
             <nav class="top-nav" aria-label="Primary Navigation">
                 <a class="current" title="Conference Home Page" href=".">Home</a>
                 <a title="Program &amp; Workshops" href="#program">Program</a>
+                <a title="Venue" href="#venue">Venue</a>
+                <a title="Hotels" href="hotels">Hotels</a>
                 <a title="Conference Organisers" href="#organisers">Organisers</a>
-                <a title="Venue, Hotels &amp; Tourism" href="#venue">Location &amp; Stay</a>
-                <a title="Registration &amp; Code of Conduct" href="#registration">Registration</a>
                 <a title="Sponsors" href="#sponsors">Sponsors</a>
+                <a title="Registration &amp; Code of Conduct" href="registration">Registration</a>
                 <a title="Conference Flyer" href="flyer">Flyer</a>
             </nav>
 
@@ -92,7 +93,7 @@
                 <div class="hero-cta-box">
                     <div class="hero-date-display">10–12 Feb 2027</div>
                     <div class="hero-location-display">Adelaide University, South Australia</div>
-                    <a href="#registration" class="button button-FullWidth">Registration &amp; Abstracts</a>
+                    <a href="registration" class="button button-FullWidth">Registration &amp; Abstracts</a>
                 </div>
             </div>
 
@@ -108,22 +109,159 @@
     </header>
 
     <main>
+ 
         <!-- ==================================================================
-             2. ORGANISERS SECTION (SyncConf Circular Avatar Grid Aesthetic)
+             2. PROGRAM & WORKSHOPS SECTION
+             ================================================================== -->
+        <section class="section-band section-white" id="program">
+            <div class="container">
+                <h2 class="section-heading">Program &amp; Workshops</h2>
+                <p class="section-subtitle">
+                    Three days of talks, discussions, and hands-on computational and quantitative psychology workshops.
+                </p>
+
+                <div class="program-grid">
+                    <!-- Call for Workshop EOIs -->
+                    <div class="info-card highlight-card">
+                        <!-- <span class="card-tag">Deadline: COB 23 October 2026</span> --->
+                        <h3>Important Dates</h3>
+                        <p>
+                            Conference registration and abstract submission is opening soon!
+                        </p>
+                        <p>
+                            <b>Abstracts due: </b>10th January 2027
+                        </p>
+                        <p>
+                            <b>Conference registration due: </b>25th January 2027
+                        </p>
+                        <!-- <a href="mailto:rachel.stephens@adelaide.edu.au,william.ngiam@adelaide.edu.au?subject=AMPC%202027%20Workshop%20EOI" class="button">Submit Workshop EOI</a>-->
+                    </div>
+
+                    <!-- Conference Schedule Overview -->
+                    <div class="info-card navy-card">
+                        <span class="card-tag navy">Not finalised!</span>
+                        <h3>Conference Schedule</h3>
+                        <p>
+                            The full talk schedule will be published once abstract submissions close.
+                        </p>
+                        <div class="schedule-days">
+                            <div class="schedule-day-item">
+                                <span class="schedule-day-date">Wed 10 Feb</span>
+                                <span class="schedule-day-desc">Day 1 &mdash; Welcome, Plenary &amp; Contributed Talks</span>
+                            </div>
+                            <div class="schedule-day-item">
+                                <span class="schedule-day-date">Thu 11 Feb</span>
+                                <span class="schedule-day-desc">Day 2 &mdash; Contributed Sessions &amp; Conference Social</span>
+                            </div>
+                            <div class="schedule-day-item">
+                                <span class="schedule-day-date">Fri 12 Feb</span>
+                                <span class="schedule-day-desc">Day 3 &mdash; Morning Talks &amp; Afternoon Workshops</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <a href="program" class="button button-secondary">View Dedicated Program &nearr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             3. LOCATION, HOTELS & TOURISM (SyncConf Dark Band + Map Strip)
+             ================================================================== -->
+        <section class="section-band section-dark" id="venue">
+            <div class="container">
+                <h2 class="section-heading">Location</h2>
+                <p class="section-subtitle">
+                    Hosted in the heart of Adelaide's cultural precinct at the City East campus.
+                </p>
+
+                <div class="venue-split">
+                    <div class="venue-text">
+                        <div class="venue-label">Adelaide University &bull; City East Campus</div>
+                        <p>
+                            The conference will be held in the <b>C3-16 Lecture Theatre</b> in the <b>Centenary Building</b> at <b>Adelaide University's City East campus</b> in the Adelaide CBD, surrounded by parklands, museums, and vibrant dining districts.
+                        </p>
+
+                        <div class="venue-label" style="margin-top: 24px;">Recommended Accommodation</div>
+                        <p style="margin-bottom: 10px;">
+                            Convenient hotels within a short walk of the Adelaide University City East campus.
+                        </p>
+                        <p>
+                            We have secured a discount code for the following hotels!
+                        </p>
+                        <div class="hotel-cards">
+                            <a href="https://www.ibisadelaide.com.au/" target="_blank" rel="noopener" class="hotel-pill" style="text-decoration: none;">
+                                <h4>Ibis Adelaide &nearr;</h4>
+                                <p>122 Grenfell St &bull; Short walk to City East campus</p>
+                            </a>
+                            <a href="https://pullmanadelaide.com.au/" target="_blank" rel="noopener" class="hotel-pill" style="text-decoration: none;">
+                                <h4>Pullman Adelaide &nearr;</h4>
+                                <p>16 Hindmarsh Square &bull; Adjacent to university precinct</p>
+                            </a>
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="https://all.accor.com/a/en.html?reserverType=SC&reserverId=SCP4687364&reserverContract=AU711AU185" target = "_blnk" class="button">Discount Booking Link</a>
+                        </div>
+
+                        <div class="tourism-box">
+                            <h3>Tourism After the Conference</h3>
+                            <p>
+                                You may wish to stay on in Adelaide for the weekend after the conference for the preview week of the wonderful
+                                <a href="https://adelaidefringe.com.au/" target="_blank" rel="noopener"><b>Adelaide Fringe Festival</b></a>—Australia's biggest arts festival and the world's second-largest annual arts festival.
+                                Preview shows will be running with lovely outdoor areas to relax, dine, and enjoy the summer weather at
+                                <a href="https://www.gardenofunearthlydelights.com.au/" target="_blank" rel="noopener"><b>The Garden of Unearthly Delights</b></a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="venue-photo-card">
+                        <a href="https://adelaide.edu.au/content/dam/adelaideuniversity/documents/life-at-adelaide/pdfs/adelaide-city-campus-east-map.pdf" target="_blank" rel="noopener" title="Open Full Adelaide City Campus East Map (PDF)" style="display: block; overflow: hidden;">
+                            <img src="assets/city_east_map_centenary.png" alt="Adelaide University City East Campus Map zoomed in on Centenary Building">
+                        </a>
+                        <div class="venue-photo-meta">
+                            <strong>C3-16 Lecture Theatre, Centenary Building</strong>
+                            Adelaide University City East Campus, Adelaide SA 5000
+                            <div style="margin-top: 12px; display: flex; gap: 12px; flex-wrap: wrap;">
+                                <a href="directions" style="color: var(--color-gold-light); font-size: 0.85rem;"><b>Venue Page &nearr;</b></a>
+                                <a href="hotels" style="color: var(--color-gold-light); font-size: 0.85rem;"><b>Hotels Page &nearr;</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full-Width Map Strip with Overlapping SyncConf-Style Button -->
+        <div class="map-strip">
+            <iframe
+                title="Map of Centenary Building, Adelaide University City East Campus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.4502503218305!2d138.6042441764402!3d-34.92024327284256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ced2d4db381d%3A0xe4ede2a3a1b1ead6!2sCentenary%20Building!5e0!3m2!1sen!2sau!4v1795173446742!5m2!1sen!2sau"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+            <div class="map-cta-overlay">
+                <a href="https://maps.google.com/?q=Centenary+Building,+Adelaide+SA" target="_blank" rel="noopener" class="button">View Map</a>
+            </div>
+        </div>
+
+        <!-- ==================================================================
+             4. ORGANISERS SECTION (SyncConf Circular Avatar Grid Aesthetic)
              ================================================================== -->
         <section class="section-band section-light" id="organisers">
             <div class="container">
                 <h2 class="section-heading">Organisers</h2>
-                <p class="section-subtitle">
-                    AMPC 2027 is organised by researchers from the School of Psychology at Adelaide University.
-                </p>
 
                 <!-- SyncConf-inspired Segmented Track Bar -->
-                <div class="track-tabs" role="navigation" aria-label="Quick Filters">
+                <!-- <div class="track-tabs" role="navigation" aria-label="Quick Filters">
+                    <a href="#program" class="track-tab">Program &amp; Workshops</a>
+                    <a href="#venue" class="track-tab">Venue &amp; Hotels</a>
                     <a href="#organisers" class="track-tab active">All Organisers</a>
-                    <a href="#program" class="track-tab">Ψ Program &amp; Workshops</a>
-                    <a href="#venue" class="track-tab">⌘ Venue &amp; Hotels</a>
-                </div>
+                </div> -->
 
                 <div class="organisers-grid">
                     <div class="organiser-card">
@@ -177,160 +315,11 @@
             </div>
         </section>
 
-        <!-- ==================================================================
-             3. PROGRAM & WORKSHOPS SECTION
-             ================================================================== -->
-        <section class="section-band section-white" id="program">
-            <div class="container">
-                <h2 class="section-heading">Program &amp; Workshops</h2>
-                <p class="section-subtitle">
-                    Three days of talks, discussions, and hands-on computational and quantitative psychology workshops.
-                </p>
-
-                <div class="program-grid">
-                    <!-- Call for Workshop EOIs -->
-                    <div class="info-card highlight-card">
-                        <span class="card-tag">Deadline: COB 23 October 2026</span>
-                        <h3>Call for Workshop EOIs</h3>
-                        <p>
-                            We are accepting Expressions of Interest (EOIs) for workshops on the <b>afternoon of Friday, 12th February 2027</b>.
-                        </p>
-                        <p>
-                            Please email your proposal—including a brief outline of the aims, content, preferred duration, and presenter name(s)—by <b>COB 23rd October 2026</b> to:
-                        </p>
-                        <p style="margin-bottom: 18px;">
-                            &bull; <a href="mailto:rachel.stephens@adelaide.edu.au">rachel(dot)stephens(at)adelaide.edu.au</a><br>
-                            &bull; <a href="mailto:william.ngiam@adelaide.edu.au">william(dot)ngiam(at)adelaide.edu.au</a>
-                        </p>
-                        <a href="mailto:rachel.stephens@adelaide.edu.au,william.ngiam@adelaide.edu.au?subject=AMPC%202027%20Workshop%20EOI" class="button">Submit Workshop EOI</a>
-                    </div>
-
-                    <!-- Conference Schedule Overview -->
-                    <div class="info-card navy-card">
-                        <span class="card-tag navy">February 10–12, 2027</span>
-                        <h3>Conference Schedule</h3>
-                        <p>
-                            The full talk schedule will be published once abstract submissions close.
-                        </p>
-                        <div class="schedule-days">
-                            <div class="schedule-day-item">
-                                <span class="schedule-day-date">Wed 10 Feb</span>
-                                <span class="schedule-day-desc">Day 1 &mdash; Welcome, Plenary &amp; Contributed Talks</span>
-                            </div>
-                            <div class="schedule-day-item">
-                                <span class="schedule-day-date">Thu 11 Feb</span>
-                                <span class="schedule-day-desc">Day 2 &mdash; Contributed Sessions &amp; Conference Social</span>
-                            </div>
-                            <div class="schedule-day-item">
-                                <span class="schedule-day-date">Fri 12 Feb</span>
-                                <span class="schedule-day-desc">Day 3 &mdash; Morning Talks &amp; Afternoon Workshops</span>
-                            </div>
-                        </div>
-                        <div style="margin-top: 20px;">
-                            <a href="program" class="button button-secondary">View Dedicated Program Page &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- ==================================================================
-             4. LOCATION, HOTELS & TOURISM (SyncConf Dark Band + Map Strip)
+             5. CODE OF CONDUCT
              ================================================================== -->
-        <section class="section-band section-dark" id="venue">
-            <div class="container">
-                <h2 class="section-heading">Location</h2>
-                <p class="section-subtitle">
-                    Hosted in the heart of Adelaide's cultural precinct at the City East campus.
-                </p>
-
-                <div class="venue-split">
-                    <div class="venue-text">
-                        <div class="venue-label">Adelaide University &bull; City East Campus</div>
-                        <p>
-                            The conference will be held in the <b>C3-16 Lecture Theatre</b> in the <b>Centenary Building</b> at <b>Adelaide University's City East campus</b> in the Adelaide CBD, surrounded by parklands, museums, and vibrant dining districts.
-                        </p>
-
-                        <div class="venue-label" style="margin-top: 24px;">Recommended Accommodation</div>
-                        <p style="margin-bottom: 10px;">
-                            Convenient hotels within a short walk of the Adelaide University City East campus. We have secured a discount code for booking at these hotels.
-                        </p>
-                        <div class="hotel-cards">
-                            <a href="https://www.ibisadelaide.com.au/" target="_blank" rel="noopener" class="hotel-pill" style="text-decoration: none;">
-                                <h4>Ibis Adelaide &nearr;</h4>
-                                <p>122 Grenfell St &bull; Short walk to City East campus</p>
-                            </a>
-                            <a href="https://pullmanadelaide.com.au/" target="_blank" rel="noopener" class="hotel-pill" style="text-decoration: none;">
-                                <h4>Pullman Adelaide &nearr;</h4>
-                                <p>16 Hindmarsh Square &bull; Adjacent to university precinct</p>
-                            </a>
-                        </div>
-
-                        <div class="tourism-box">
-                            <h3>Tourism After the Conference</h3>
-                            <p>
-                                You may wish to stay on in Adelaide for the weekend after the conference for the preview week of the wonderful
-                                <a href="https://adelaidefringe.com.au/" target="_blank" rel="noopener"><b>Adelaide Fringe Festival</b></a>—Australia's biggest arts festival and the world's second-largest annual arts festival.
-                                Preview shows will be running with lovely outdoor areas to relax, dine, and enjoy the summer weather at
-                                <a href="https://www.gardenofunearthlydelights.com.au/" target="_blank" rel="noopener"><b>The Garden of Unearthly Delights</b></a>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="venue-photo-card">
-                        <a href="https://adelaide.edu.au/content/dam/adelaideuniversity/documents/life-at-adelaide/pdfs/adelaide-city-campus-east-map.pdf" target="_blank" rel="noopener" title="Open Full Adelaide City Campus East Map (PDF)" style="display: block; overflow: hidden;">
-                            <img src="assets/city_east_map_centenary.png" alt="Adelaide University City East Campus Map zoomed in on Centenary Building">
-                        </a>
-                        <div class="venue-photo-meta">
-                            <strong>C3-16 Lecture Theatre, Centenary Building</strong>
-                            Adelaide University City East Campus, Adelaide SA 5000
-                            <div style="margin-top: 12px; display: flex; gap: 12px; flex-wrap: wrap;">
-                                <a href="directions" style="color: var(--color-gold-light); font-size: 0.85rem;"><b>Venue Page &nearr;</b></a>
-                                <a href="hotels" style="color: var(--color-gold-light); font-size: 0.85rem;"><b>Hotels Page &nearr;<b></b></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Full-Width Map Strip with Overlapping SyncConf-Style Button -->
-        <div class="map-strip">
-            <iframe
-                title="Map of Centenary Building, Adelaide University City East Campus"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.4502503218305!2d138.6042441764402!3d-34.92024327284256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ced2d4db381d%3A0xe4ede2a3a1b1ead6!2sCentenary%20Building!5e0!3m2!1sen!2sau!4v1795173446742!5m2!1sen!2sau"
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin">
-            </iframe>
-            <div class="map-cta-overlay">
-                <a href="https://maps.google.com/?q=Centenary+Building,+Adelaide+SA" target="_blank" rel="noopener" class="button">View Map</a>
-            </div>
-        </div>
-
-        <!-- ==================================================================
-             5. FULL-WIDTH ACCENT CTA BANNER & REGISTRATION / CODE OF CONDUCT
-             ================================================================== -->
-        <section class="section-band section-accent" id="registration">
-            <div class="container">
-                <div class="cta-banner-title">Registration &amp; Abstract Submissions Open in November</div>
-                <p class="cta-banner-sub" style="margin-bottom: 12px;">
-                    <b>Abstracts due:</b> 10th January 2027 &nbsp;&bull;&nbsp; <b>Registration closes:</b> 25th January 2027
-                </p>
-                <p class="cta-banner-sub">
-                    Instructions on how to register and submit abstracts for AMPC 2027 will appear here in due time. Thank you for your patience!
-                </p>
-                <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-                    <a href="registration" class="button">Registration Details</a>
-                    <a href="assets/MathPsych2027.pdf" target="_blank" rel="noopener" class="button button-outline-light">Download Conference Flyer (PDF)</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-band section-light" style="padding-top: 32px; padding-bottom: 48px;">
+        <section class="section-band section-light" id="code-of-conduct" style="padding-top: 32px; padding-bottom: 48px;">
             <div class="container">
                 <div class="coc-card">
                     <h3>Code of Conduct</h3>
@@ -398,16 +387,13 @@
                 <div class="footer-text">
                     <div class="footer-presented-by">Presented by</div>
                     <div class="footer-org-title"><span>ASMP</span> &bull; Australian Society for Mathematical Psychology</div>
-                    <p>
-                        The annual Australasian Mathematical Psychology Conference brings together researchers across Australasia and internationally to advance mathematical, statistical, and computational models of psychology and cognitive science.
-                    </p>
                     <p style="margin-bottom: 0;">
                         Organising Team:
                         <a href="https://researchers.adelaide.edu.au/profile/rachel.stephens" target="_blank" rel="noopener">Rachel Stephens</a>,
                         <a href="https://researchers.adelaide.edu.au/profile/william.ngiam" target="_blank" rel="noopener">William Ngiam</a>,
                         <a href="https://researchers.adelaide.edu.au/profile/keith.ransom" target="_blank" rel="noopener">Keith Ransom</a>, and
-                        <a href="https://researchers.adelaide.edu.au/profile/carolyn.semmler" target="_blank" rel="noopener">Carolyn Semmler</a>,
-                        or <a href="mailto:rachel.stephens@adelaide.edu.au">Email us</a>.
+                        <a href="https://researchers.adelaide.edu.au/profile/carolyn.semmler" target="_blank" rel="noopener">Carolyn Semmler</a>.
+                        <a href="mailto:rachel.stephens@adelaide.edu.au">Email us</a>.
                     </p>
                 </div>
 
@@ -446,7 +432,7 @@
 
             var navLinks = floatingNav.querySelectorAll('a[data-section]');
             var allLinks = floatingNav.querySelectorAll('a');
-            var sectionIds = ['top', 'organisers', 'program', 'venue', 'registration', 'sponsors'];
+            var sectionIds = ['top', 'program', 'venue', 'organisers', 'sponsors'];
 
             function setMenuOpen(open) {
                 if (open) {

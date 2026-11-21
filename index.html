@@ -20,6 +20,7 @@
          FLOATING LEFT MENUBAR (Revealed on Scroll Down)
          ================================================================== -->
     <nav class="floating-left-nav" id="floatingNav" aria-label="Floating Side Navigation">
+        <button type="button" class="floating-nav-toggle" id="floatingNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
         <div class="floating-nav-brand">AMPC 2027</div>
         <a class="current" href="#top" data-section="top">Home</a>
         <a href="#organisers" data-section="organisers">Organisers</a>
@@ -440,10 +441,47 @@
     <script>
         (function () {
             var floatingNav = document.getElementById('floatingNav');
+            var toggleBtn = document.getElementById('floatingNavToggle');
             if (!floatingNav) return;
 
             var navLinks = floatingNav.querySelectorAll('a[data-section]');
+            var allLinks = floatingNav.querySelectorAll('a');
             var sectionIds = ['top', 'organisers', 'program', 'venue', 'registration', 'sponsors'];
+
+            function setMenuOpen(open) {
+                if (open) {
+                    floatingNav.classList.add('is-open');
+                    if (toggleBtn) {
+                        toggleBtn.setAttribute('aria-expanded', 'true');
+                        toggleBtn.innerHTML = '&times;';
+                    }
+                } else {
+                    floatingNav.classList.remove('is-open');
+                    if (toggleBtn) {
+                        toggleBtn.setAttribute('aria-expanded', 'false');
+                        toggleBtn.innerHTML = '&#9776;';
+                    }
+                }
+            }
+
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    setMenuOpen(!floatingNav.classList.contains('is-open'));
+                });
+            }
+
+            for (var k = 0; k < allLinks.length; k++) {
+                allLinks[k].addEventListener('click', function () {
+                    setMenuOpen(false);
+                });
+            }
+
+            document.addEventListener('click', function (e) {
+                if (floatingNav.classList.contains('is-open') && !floatingNav.contains(e.target)) {
+                    setMenuOpen(false);
+                }
+            });
 
             function updateFloatingNav() {
                 var scrollY = window.scrollY || window.pageYOffset;
@@ -452,6 +490,7 @@
                     floatingNav.classList.add('is-visible');
                 } else {
                     floatingNav.classList.remove('is-visible');
+                    setMenuOpen(false);
                 }
 
                 var activeId = 'top';

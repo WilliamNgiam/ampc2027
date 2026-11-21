@@ -17,6 +17,7 @@
 <body>
 
     <nav class="floating-left-nav" id="floatingNav" aria-label="Floating Side Navigation">
+        <button type="button" class="floating-nav-toggle" id="floatingNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
         <div class="floating-nav-brand">AMPC 2027</div>
         <a href=".">Home</a>
         <a href="program">Program</a>
@@ -131,12 +132,44 @@
     <script>
         (function () {
             var floatingNav = document.getElementById('floatingNav');
+            var toggleBtn = document.getElementById('floatingNavToggle');
             if (!floatingNav) return;
+
+            function setMenuOpen(open) {
+                if (open) {
+                    floatingNav.classList.add('is-open');
+                    if (toggleBtn) {
+                        toggleBtn.setAttribute('aria-expanded', 'true');
+                        toggleBtn.innerHTML = '&times;';
+                    }
+                } else {
+                    floatingNav.classList.remove('is-open');
+                    if (toggleBtn) {
+                        toggleBtn.setAttribute('aria-expanded', 'false');
+                        toggleBtn.innerHTML = '&#9776;';
+                    }
+                }
+            }
+
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    setMenuOpen(!floatingNav.classList.contains('is-open'));
+                });
+            }
+
+            document.addEventListener('click', function (e) {
+                if (floatingNav.classList.contains('is-open') && !floatingNav.contains(e.target)) {
+                    setMenuOpen(false);
+                }
+            });
+
             function onScroll() {
                 if ((window.scrollY || window.pageYOffset) > 180) {
                     floatingNav.classList.add('is-visible');
                 } else {
                     floatingNav.classList.remove('is-visible');
+                    setMenuOpen(false);
                 }
             }
             window.addEventListener('scroll', onScroll, { passive: true });

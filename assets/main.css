@@ -265,7 +265,7 @@ sub {
    ========================================================================== */
 .floating-left-nav {
     position: fixed;
-    left: 20px;
+    left: clamp(8px, 1.5vw, 22px);
     top: 50%;
     transform: translateY(-50%) translateX(-24px);
     z-index: 1000;
@@ -275,12 +275,13 @@ sub {
     border: 1px solid rgba(82, 115, 158, 0.4);
     border-left: 4px solid var(--color-crimson);
     border-radius: 8px;
-    padding: 12px 10px;
+    padding: clamp(8px, 0.9vw, 12px) clamp(7px, 0.8vw, 10px);
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
     display: flex;
     flex-direction: column;
     gap: 2px;
-    min-width: 148px;
+    min-width: clamp(118px, 11vw, 152px);
+    overflow: visible;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -294,14 +295,45 @@ sub {
     transform: translateY(-50%) translateX(0);
 }
 
+/* Mobile Toggle Tab Button (Hidden on Desktop / Laptop) */
+.floating-nav-toggle {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 44px;
+    background-color: rgba(22, 31, 41, 0.95);
+    color: var(--color-gold-light);
+    border: 1px solid rgba(82, 115, 158, 0.45);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    line-height: 1;
+    padding: 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.floating-nav-toggle:hover,
+.floating-nav-toggle:focus {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    outline: none;
+}
+
 .floating-nav-brand {
     font-family: 'Roboto Slab', serif;
-    font-size: 0.75rem;
+    font-size: clamp(0.68rem, 0.75vw, 0.75rem);
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-gold-light);
-    padding: 4px 10px 8px 10px;
+    padding: 4px 8px 8px 8px;
     margin-bottom: 4px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
@@ -317,11 +349,11 @@ sub {
 .floating-left-nav a {
     color: rgba(249, 242, 230, 0.82);
     font-family: 'Roboto', sans-serif;
-    font-size: 0.76rem;
+    font-size: clamp(0.68rem, 0.76vw, 0.76rem);
     font-weight: 500;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    padding: 8px 10px;
+    padding: clamp(5px, 0.6vw, 8px) clamp(7px, 0.8vw, 10px);
     border-radius: 4px;
     border-left: 2px solid transparent;
     text-decoration: none !important;
@@ -1197,18 +1229,44 @@ iframe.directions {
    ========================================================================== */
 @media only screen and (max-width: 1220px) {
     .floating-left-nav {
-        left: 10px;
-        min-width: 128px;
-        padding: 10px 8px;
+        left: 8px;
+        min-width: 118px;
+        padding: 9px 7px;
     }
 
     .floating-left-nav a {
-        font-size: 0.72rem;
-        padding: 6px 8px;
+        font-size: 0.7rem;
+        padding: 5px 8px;
     }
 }
 
 @media only screen and (max-width: 860px) {
+    /* On phones/tablets, collapse the floating menu off-screen by default and show the toggle button */
+    .floating-left-nav {
+        left: 0;
+        border-radius: 0 8px 8px 0;
+        min-width: 156px;
+        padding: 12px 10px;
+        transform: translateY(-50%) translateX(calc(-100% - 44px));
+    }
+
+    .floating-left-nav.is-visible {
+        transform: translateY(-50%) translateX(-100%);
+    }
+
+    .floating-left-nav.is-visible.is-open {
+        transform: translateY(-50%) translateX(0);
+    }
+
+    .floating-nav-toggle {
+        display: flex;
+    }
+
+    .floating-left-nav a {
+        font-size: 0.78rem;
+        padding: 8px 10px;
+    }
+
     .hero-lockup {
         grid-template-columns: 120px 1fr;
         gap: 20px;
